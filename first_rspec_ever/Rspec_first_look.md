@@ -173,7 +173,7 @@ This tells us a line nubmer and a file naem again.  Strange.  The previous one s
 
 #CRUFT. 
 
-The following are very irritating. It looks like the content and the section header are repeated for no apparent reason. 
+The following are irritating. It looks like the content and the summary are repeated twice. 
 
 ![](cruft.png)
 ![](more_cruft.png)
