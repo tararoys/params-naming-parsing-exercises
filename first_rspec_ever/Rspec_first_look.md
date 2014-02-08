@@ -132,3 +132,19 @@ This seems like this is supposed to compare the two gumballs and seeing if they 
 
 
 
+```
+  Diff:
+       @@ -1,3 +1,3 @@
+       -"password" => "1337",
+       -"username" => "zerocool"
+       +"??" => "zerocool",
+       +"???" => "1337"
+```
+
+This diff sectio is the most confusing.  There are a lot of puzzling symbols that I don't quite know the meaning off.  With a sectio this small, though, it's not hard to hypothesize that the top bit is showing what was expected and the bottom bit is showing what was actually there. 
+
+```
+  # ./params_parsing_spec.rb:13:in `block (3 levels) in <top (required)>'
+```
+This is actually where you see the filename and line number to concentrate on.  However, the _block (3 levels) in <top (required)>_ is very confusing. 
+
