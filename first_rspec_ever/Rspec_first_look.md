@@ -63,9 +63,12 @@ rspec ./params_parsing_spec.rb:5 # Rack Parameter Naming/Parsing when specifying
 
 Ok.  Time to break this down and read it section by section.  Fortunately, it's syntax-higlighted. 
 
+
 #Test Description
 
-![](first_failed_rspec_test.jpg)
+
+![](first_failed_rspec_test.png)
+
 
 Whew.  Even taking only the first section, this is still intimidating.  I need to read this word by word. 
 
