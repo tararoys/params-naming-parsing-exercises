@@ -102,4 +102,25 @@ If I had to take a guess, I would say, that this meant,
 
 (See my function is like a gumball machine analogy).
 
+```
+  expected: {"username"=>"zerocool", "password"=>"1337"}
+            got: {"??"=>"zerocool", "???"=>"1337"}
+       
+       (compared using eql?)
+``` 
+
+This is actually useful.  It says that, from the gumball machine, they were expecting a thing that looked like 
+
+```
+{"username"=>"zerocool", "password"=>"1337"}
+```
+
+and they got a thing that looked like
+
+```
+  {"??"=>"zerocool", "???"=>"1337"} 
+```
+
+So basially it looks like we got the wrong gumball back from the params gumball machine.
+
 
