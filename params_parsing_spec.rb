@@ -27,15 +27,15 @@ describe "Rack Parameter Naming/Parsing" do
       expect(params(form_html)).to eql({"category_ids" => ["4", "5", "6"]})
     end
 
-    it "can be mixed with other basic field names and array field names" do
+    it "can be mixed with other _basic field names_ and _array field names_" do
       form_html = <<-HTML
       <form action="not_specified" method="post">
-        <input type="text" name="?" value="Karaoke!" />
-        <input type="checkbox" name="??" value="4" checked />
-        <input type="checkbox" name="???" value="5" checked />
-        <input type="checkbox" name="????" value="6" checked />
-        <input type="text" name="?????" value="Joe" />
-        <input type="text" name="??????" value="Jane" />
+        <input type="text" name="party_name" value="Karaoke!" />
+        <input type="checkbox" name="category_ids[]" value="4" checked />
+        <input type="checkbox" name="category_ids[]" value="5" checked />
+        <input type="checkbox" name="category_ids[]" value="6" checked />
+        <input type="text" name="guest_names[]" value="Joe" />
+        <input type="text" name="guest_names[]" value="Jane" />
       </form>
       HTML
 
