@@ -68,10 +68,10 @@ describe "Rack Parameter Naming/Parsing" do
     it "allows for nested hashes to have values that parse to arrays of values" do
       form_html = <<-HTML
       <form action="not_specified" method="post">
-        <input type="text" name="?" value="Eye-catching Title" />
-        <textarea name="??">Shallow story...</textarea>
-        <input type="checkbox" name="???" value="87" /> Hard Hitting News
-        <input type="checkbox" name="????" value="34" /> Breaking
+        <input type="text" name="post[title]" value="Eye-catching Title" />
+        <textarea name="post[body]">Shallow story...</textarea>
+        <input type="checkbox" name="post[tag_ids][]" value="87" /> Hard Hitting News
+        <input type="checkbox" name="post[tag_ids][]" value="34" /> Breaking
       </form>
       HTML
 
