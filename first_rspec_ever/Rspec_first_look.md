@@ -94,7 +94,7 @@ This is a repetition of the first line. Still intimidating, getting less so with
   Failure/Error: expect(params(form_html)).to eql({"username" => "zerocool", "password" => "1337"})
 ```
 
-Ok.  This is actually more readable than the line above it. (but I expect it to be very intimidating to a newbie who does not already know ruby.)  
+Ok.  This is actually more readable than the line above it. (but I expect it to be very intimidating to a newbie who does not already know ruby.)
 
 If I had to take a guess, I would say, that this meant, 
 
@@ -148,3 +148,15 @@ This diff sectio is the most confusing.  There are a lot of puzzling symbols tha
 ```
 This is actually where you see the filename and line number to concentrate on.  However, the _block (3 levels) in <top (required)>_ is very confusing. 
 
+
+![](first_test_summary.png)
+
+This seems straightforward and repeat of the first line. It tells us
+
+```
+  Finished in 0.00892 seconds
+  1 example, 1 failure 
+```
+
+How long it took to run the rspec thingy. I think the technical term is spec. Or maybe testing suite.
+That there was...one example? I assume that is a test? Whatever 'example' means, there's one of them and just one failure. 
