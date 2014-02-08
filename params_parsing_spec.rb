@@ -47,12 +47,12 @@ describe "Rack Parameter Naming/Parsing" do
     end
   end
 
-  context "when the expected out come is a parameter with a nested hash value" do
-    it "parses multiple input fields into an array of values for a single key" do
+  context "when the expected out come is a _parameter_ with a _nested hash value_" do
+    it "_parses_ _multiple input fields_ into an _array of values_ for a _single key_" do
       form_html = <<-HTML
       <form action="not_specified" method="post">
-        <input type="text" name="?" value="Eye-catching Title" />
-        <textarea name="??">Shallow story...</textarea>
+        <input type="text" name="post[title]" value="Eye-catching Title" />
+        <textarea name="post[body]">Shallow story...</textarea>
       </form>
       HTML
 
