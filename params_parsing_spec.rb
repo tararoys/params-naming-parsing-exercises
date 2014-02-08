@@ -14,13 +14,13 @@ describe "Rack Parameter Naming/Parsing" do
     end    
   end
 
-  context "when the expected outcome is a parameter with an array of values" do
-    it "parses multiple input fields into an array of values for a single key" do
+  context "when the expected outcome is a [_parameter_ with an _array of values_](http://stackoverflow.com/questions/1010941/html-input-arrays)" do
+    it "_parses_ _multiple input fields_ into an _array of values_ for a _single key_" do
       form_html = <<-HTML
       <form action="not_specified" method="post">
-        <input type="checkbox" name="?" value="4" checked />
-        <input type="checkbox" name="??" value="5" checked />
-        <input type="checkbox" name="???" value="6" checked />
+        <input type="checkbox" name="category_ids[]" value="4" checked />
+        <input type="checkbox" name="category_ids[]" value="5" checked />
+        <input type="checkbox" name="category_ids[]" value="6" checked />
       </form>
       HTML
 
