@@ -64,8 +64,8 @@ describe "Rack Parameter Naming/Parsing" do
     end
   end
 
-  context "when nesting parameters of diffent value types" do
-    it "allows for nested hashes to have values that parse to arrays of values" do
+  context "when _nesting parameters_ of _different value types_" do
+    it "allows for _nested hashes_ to have _values_ that _parse_ to _arrays of values_" do
       form_html = <<-HTML
       <form action="not_specified" method="post">
         <input type="text" name="post[title]" value="Eye-catching Title" />
@@ -83,13 +83,13 @@ describe "Rack Parameter Naming/Parsing" do
                                         })
     end
 
-    it "allows for nested hashes to be included in an array of values for a parameter" do
+    it "allows for _nested hashes_ to be included in an _array of values_ for a _parameter_" do
         form_html = <<-HTML
         <form action="not_specified" method="post">
-          <input type="text" name="?" value="Joe" />
-          <input type="text" name="??" value="5551212" />
-          <input type="text" name="???" value="Jane" />
-          <input type="text" name="????" value="5551213" />
+          <input type="text" name="guests[][name]" value="Joe" />
+          <input type="text" name="guests[][phone]" value="5551212" />
+          <input type="text" name="guests[][name]" value="Jane" />
+          <input type="text" name="guests[][phone]" value="5551213" />
         </form>
         HTML
 
