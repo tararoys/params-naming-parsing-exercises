@@ -124,3 +124,11 @@ and they got a thing that looked like
 So basially it looks like we got the wrong gumball back from the params gumball machine.
 
 
+```
+ (compared using eql?)
+```
+
+This seems like this is supposed to compare the two gumballs and seeing if they are exactly equal.
+
+
+
