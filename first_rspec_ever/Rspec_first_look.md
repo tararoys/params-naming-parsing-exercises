@@ -60,3 +60,14 @@ Failed examples:
 
 rspec ./params_parsing_spec.rb:5 # Rack Parameter Naming/Parsing when specifying basic names for input fields parses input fields into a hash where name is the key, and value is the value
 ```
+
+Ok.  Time to break this down and read it section by section.  Fortunately, it's syntax-higlighted. 
+
+![](first_failed_rspec_test.jpg)
+
+Whew.  Even taking only the first section, this is still intimidating.  I need to read this word by word. 
+
+  1) _Rack Parameter Naming/Parsing_ when specifying _basic names_ for _input fields_ _parses_ _input fields_ into a _hash_ where _name_ is the _key_, and _value_ is the _value_
+
+Ok. I've separated out all of the lines and highlighted them.  This is still an intimidating file. 
+
