@@ -160,3 +160,9 @@ This seems straightforward and repeat of the first line. It tells us
 
 How long it took to run the rspec thingy. I think the technical term is spec. Or maybe testing suite.
 That there was...one example? I assume that is a test? Whatever 'example' means, there's one of them and just one failure. 
+
+```
+  rspec ./params_parsing_spec.rb:5 # Rack Parameter Naming/Parsing when specifying basic names for input fields parses input fields into a hash where name is the key, and value is the value
+```
+
+This tells us a line nubmer and a file naem again.  Strange.  The previous one said line 13. this one says line 5.  I wonder what the difference is?
