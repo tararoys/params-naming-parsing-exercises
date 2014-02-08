@@ -166,3 +166,15 @@ That there was...one example? I assume that is a test? Whatever 'example' means,
 ```
 
 This tells us a line nubmer and a file naem again.  Strange.  The previous one said line 13. this one says line 5.  I wonder what the difference is?
+
+
+#CRUFT. 
+
+The following are very irritating. It looks like the content and the section header are repeated for no apparent reason. 
+
+![](cruft.png)
+![](more_cruft.png)
+
+This really annoys me.  Here I am, looking at my first rspec message, and the important differences are repeated by two sections that appear to me to be exactly the same. This wall of text would not look nearly so intimidating if half of it wasn't actually there.  Is this an rspec thing that developers actually tolerate, or is this something misconfigured?
+
+If it's an rspec thing that developers actually tolerate, this developer is not going to tolerate it for very long. As soon as I get the skillz, I'm going to nuke the uneccesary parts. 
