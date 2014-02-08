@@ -1,8 +1,8 @@
 require_relative "spec_helper"
 
 describe "Rack Parameter Naming/Parsing" do
-  context "when specifying basic names for input fields" do
-    it "parses input fields into a hash where name is the key, and value is the value" do
+  context "when specifying _basic names_ for _input fields_" do
+    it "parses _input fields_ into a _hash_ where _name_ is the _key_, and _value_ is the _value_" do
       form_html = <<-HTML
       <form action="not_specified" method="post">
         <input type="text" name="username" value="zerocool" />
@@ -14,7 +14,7 @@ describe "Rack Parameter Naming/Parsing" do
     end    
   end
 
-  context "when the expected out come is a parameter with an array of values" do
+  context "when the expected outcome is a parameter with an array of values" do
     it "parses multiple input fields into an array of values for a single key" do
       form_html = <<-HTML
       <form action="not_specified" method="post">
